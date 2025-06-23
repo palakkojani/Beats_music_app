@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Full screen layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Left main content */
+.main-section {
+  flex: 3;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #111;
+  color: white;
+}
+
+/* Sidebar player */
+.player-sidebar {
+  flex: 1;
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.player-img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.nav-left a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.search-box {
+  flex-grow: 1;
+  margin: 0 20px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  border: none;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+}
+
+.nav-user img {
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Hero section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #000, #111);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.listen-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #2d7ff9;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+/* Artists Row */
+.top-artists-section {
+  margin-bottom: 30px;
+}
+
+.artists-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.artist-card {
+  text-align: center;
+}
+
+/* Bottom grid (genres and charts) */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Genres */
+.genres-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.genre-btn {
+  background-color: #2d7ff9;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Charts */
+.charts-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.chart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Player Controls */
+.player-timeline {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 24px;
+}
+
+.play-btn {
+  background-color: #2d7ff9;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.lyrics-btn {
+  margin-top: 10px;
+  color: #2d7ff9;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.coverimg{
+  height: 100px;
+}
